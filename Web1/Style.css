@@ -1,0 +1,37 @@
+body{
+    background-image: url(images/nO.jpg);
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: 45%;
+    background-repeat: space;
+}
+.checkbox{
+    color: azure;
+}
+.main_table{
+    border: 0.75px solid #008000;
+    margin: auto;
+}
+.head_of_table{
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 0.97em;
+    color: #fff200;
+    border-bottom: 1px solid green;
+    padding: 3px 3px;
+}
+#draw{
+    font-weight: bold; border-top: 1px solid #008000;
+    padding: 5px 5px;
+}
+.data{
+    color: #fff200;
+    font-family: Century;
+}
+
+table.result-table {width: 100%; border-collapse: collapse; text-align: left; color: yellow}
+table.result-table td {padding: 12px 16px;}  /* селектор потомков */
+table.result-table thead tr {font-weight: bold; border-top: 1px solid #008000;}
+table.result-table tr {border-bottom: 1px solid green;}
+table.result-table tbody tr:hover {background: #008000;opacity: .5}

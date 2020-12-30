@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_1</title>
+    <meta name="description" content="Это лабораторная работа Вовы Патутина">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+<table class="main_table">
+    <th colspan="2" class="head_of_table">
+        <div class="header-text">Томас Андерсон (НЕО) <br> P3214 <br> Вариант 2514</div>
+
+        <div id="draw">
+            <img src="images/draw1.png" width="400" height="400" alt="рисунок по заданию">
+        </div>
+
+    </th>
+
+    <tr>
+        <td class="data">
+            <label>|Попробуй попасть в Нео|</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="data">
+            <label>X=</label>
+        </td>
+        <td class="checkbox" id="Select_X">
+            <label><input type="checkbox" name="-5" id="x_m5" value="-5" onchange="check_checkbox()">-5</label>
+            <label><input type="checkbox" name="-4" id="x_m4" value="-4" onchange="check_checkbox()">-4</label>
+            <label><input type="checkbox" name="-3" id="x_m3" value="-3" onchange="check_checkbox()">-3</label>
+            <label><input type="checkbox" name="-2" id="x_m2" value="-2" onchange="check_checkbox()">-2</label>
+            <label><input type="checkbox" name="-1" id="x_m1" value="-1" onchange="check_checkbox()">-1</label>
+            <label><input type="checkbox" name="0" id="x_0" value="0" onchange="check_checkbox()">0</label>
+            <label><input type="checkbox" name="1" id="x_1" value="1" onchange="check_checkbox()">1</label>
+            <label><input type="checkbox" name="2" id="x_2" value="2" onchange="check_checkbox()">2</label>
+            <label><input type="checkbox" name="3" id="x_3" value="3" onchange="check_checkbox()">3</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="data">
+            <label>Y=</label>
+        </td>
+        <td class="data">
+            <div class="inpcontainer">
+                <label></label><input type="text" id="y_param" name="y">
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="data">
+            <label>R=</label>
+        </td>
+        <td class="data">
+            <div class="inpcontainer">
+                <label>
+                    <select id="Select_R">
+                        <option value="1" id="op1">1</option>
+                        <option value="1.5" id="op1_5">1.5</option>
+                        <option value="2" id="op2">2</option>
+                        <option value="2.5" id="op2_5">2.5</option>
+                        <option value="3" id="op3">3</option>
+                    </select>
+                </label>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="data">
+        <td>
+            <input type="button" id="button" name="button" value="Стреляю"
+                   style="background: rgb(253, 244, 227);border-radius: 3px;color: #000000;font-weight: bold;padding: 6px 20px;text-align: center;">
+        </td>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <table class="result-table">
+                <thead>
+                <td>X</td>
+                <td>Y</td>
+                <td>R</td>
+                <td>Результат</td>
+                <td>Сколько летела пуля</td>
+                <td>Когда ты выстрелил</td>
+                </thead>
+                <tbody id="table_out">
+                </tbody>
+            </table>
+        </td>
+    </tr>
+
+
+</table>
+<script src="js/check.js"></script>
+<script src="js/request.js"></script>
+<script src="js/table.js"></script>
+</body>
+</html>
